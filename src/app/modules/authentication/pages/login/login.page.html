@@ -1,0 +1,17 @@
+<ion-content scroll-y="false" margin="auto">
+  <div id="all">
+    <div id="center">
+      <ion-text>
+        <h1 id="logo">logo</h1>
+        <h6 id="legend">make your trip more enjoyable</h6>
+      </ion-text>
+    </div>
+    <form [formGroup]="loginForm" action="#" method="POST">
+      <h2 id="login-legend">login to your account</h2>
+      <input formControlName="email" type="email" name="mail" class="field" placeholder="enter your mail">
+      <input formControlName="passowrd" type="password" name="password" class="field" placeholder="enter your password">
+      <button (click)="loginUser()">Default</button>
+      <p>don’t have an account? <a href="" id="sign-link">sign up</a></p>
+    </form>
+  </div>
+</ion-content>

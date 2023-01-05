@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,,00&display=swap');
+*{
+  font-family: 'Poppins', sans-serif;
+
+}
+#all{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+
+
+}
+
+@keyframes move1 {
+  0%{
+    width: 200px;
+    height: 200px;
+  }30%{
+     position: absolute;
+     height: 180%;
+     width:180%;
+   }
+  100%{
+    position:absolute;
+    margin-bottom: 800px;
+    width: 180%;
+    height: 60%;
+
+
+  }
+}
+
+@keyframes move2 {
+  from{
+  }to{
+     margin-top: 250px;
+   }
+
+}
+@keyframes move3 {
+  from{
+  }to{
+     opacity:60%;
+   }
+
+}
+#center{
+  width: 200px;
+  height: 200px;
+  border-radius:100%;
+  background: #0f2027; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  animation: move1 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo{
+  animation:move2 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  text-align: center;
+
+}
+#legend{
+  opacity:0%;
+  text-align: center;
+  animation:move3 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  margin-bottom: -26px;
+}
